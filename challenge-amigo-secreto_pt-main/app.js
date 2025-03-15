@@ -62,6 +62,8 @@ function sortearAmigo() {
     let resultado = document.getElementById("resultado");
     resultado.innerHTML = `<li> Amigo Sorteado: <strong>${amigoSorteado}</strong> </li>`;
     indiceSorteado = gerarNumeroAleatorio(listaAmigos.length); 
+    listaAmigos = [];
+    atualizarLista();
 }
 
 function removerAmigo(index) {
